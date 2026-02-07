@@ -1,5 +1,7 @@
 # Домашнее задание к лекции «Unit-тестирование»
 
+[![Build status](https://ci.appveyor.com/api/projects/status/ugso9dno5q9aj9vw?svg=true)](https://ci.appveyor.com/project/AstraM86/health-indicator)
+
 **Важно**: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.
 
 **Важно**: ESLint не должен выдавать ошибок.
