@@ -5,12 +5,19 @@ module.exports = {
     jest: true,
     node: true,
   },
-  extends: ['eslint:recommended'],
+  extends: ['airbnb-base',
+    'plugin:jest/recommended',
+  ],
+  plugins: ['jest'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
   rules: {
+    'linebreak-style': 'off',
+    'import/extensions': 'off',
+    'import/prefer-default-export': 'off',
+    'no-console': 'warn',
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
   },
   ignorePatterns: [
@@ -19,6 +26,6 @@ module.exports = {
     'coverage/',
     '*.log',
     'webpack.config.js',
-    'babel.config.json'
+    'babel.config.json',
   ],
 };
